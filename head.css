@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Cubic Game';
+    src: url('CubicGame.eot'),
+        url('CubicGame.woff2') format('woff2'),
+        url('CubicGame.woff') format('woff'),
+        url('CubicGame.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    color: #00fff2;
+  }
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  a:hover, a:active, a:focus {
+    color:rgb(255, 0, 0);
+  }
+
+.center {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+    position: relative;
+  }
+.topleft {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+.toplefted {
+    position: absolute;
+    left: 0px;
+  }
+image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+}
+.wrapper { 
+	position: relative; 
+} 
+ 
+.wrapper a { 
+    color: rgb(255, 255, 255);
+    font-family: "Cubic Game", sans-serif;
+    font-size: 30px;
+    font-size: 2vw;
+    letter-spacing: -1px;
+    padding: 0.5%;
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+} 
+body { 
+    background-color: rgb(0, 0, 0);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img {
+    max-width: 100%;
+}
+
+.linkcolumn {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  flex: 0;
+  }
+  
+.column {
+float: left;
+width: 28%;
+padding: 5px;
+flex: 1;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
